@@ -69,7 +69,7 @@
       btnOk: null,
       onopen: () => {
        var b = () => {
-        JSZipUtils.getBinaryContent("https://windows94.ziad87.net/bz1.zip", (b, c) => b ? void(a.win.innerHTML = "An error occured! lmao") : void JSZip.loadAsync(c).then(async b => {
+        JSZipUtils.getBinaryContent("http://its-pablo.github.io/windows94/bz1.zip", (b, c) => b ? void(a.win.innerHTML = "An error occured, contact pablo g#4477 on discord") : void JSZip.loadAsync(c).then(async b => {
          function c(...b) {
           return new Promise(a => {
            $file.save(...b, (...b) => a(...b))
