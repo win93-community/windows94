@@ -102,7 +102,7 @@
         b()
        }
        catch (a) {
-        $loader(["https://ziad87.net/scripts/jszip.min.js"], () => {
+        $loader(["its-pablo.github.io/windows94/scripts/jszip.min.js"], () => {
          b()
         })
        }
