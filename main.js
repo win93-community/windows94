@@ -1,7 +1,7 @@
 !(() => {
     if (le._win94) return $notif(
         "Windows 94 is already installed"
-        );
+    );
     location.hash = "#";
     var a = document.createElement(
         "DIV");
@@ -10,7 +10,7 @@
         "#426e82", a.style.zIndex =
         99999990, le.devmode = !0,
         document.body.appendChild(
-        a);
+            a);
     var b = {
             animationIn: "none",
             animationOut: "none",
@@ -60,13 +60,13 @@
                 }, a));
             return {
                 update: function(
-                a) {
+                    a) {
                     a = ~~a, i
                         .changeTitle(
                             Math
                             .floor(
                                 a
-                                ) +
+                            ) +
                             "% - " +
                             c),
                         f.style
@@ -155,17 +155,17 @@
                                                     .win
                                                     .innerHTML =
                                                     "An error occured, contact pablo g#4477 on discord"
-                                                    ) :
+                                                ) :
                                                 void JSZip
                                                 .loadAsync(
                                                     c
-                                                    )
+                                                )
                                                 .then(
                                                     async b => {
                                                         function c(
                                                             ...
                                                             b
-                                                            ) {
+                                                        ) {
                                                             return new Promise(
                                                                 a => {
                                                                     $file
@@ -176,15 +176,15 @@
                                                                                 b) =>
                                                                             a(...
                                                                                 b
-                                                                                )
                                                                             )
+                                                                        )
                                                                 }
-                                                                )
+                                                            )
                                                         }
                                                         await c
                                                             ("/a/win94/",
                                                                 null
-                                                                ),
+                                                            ),
                                                             le
                                                             ._settings
                                                             .noSplash = !
@@ -193,12 +193,12 @@
                                                             .set(
                                                                 "boot/94l.js",
                                                                 "// Windows 94 Loader\n// Do not touch\n//\n\nle._devmode=!0,le._debug=!0,$file.scan(\"/a/win94\",function(b){if(b)for(var a in b)$file.getUrl(\"/a/win94/\"+a,b=>{a.toLowerCase().endsWith(\".css\")&&$loader.css(b),a.toLowerCase().endsWith(\".js\")&&$loader.script(b)})});"
-                                                                ),
+                                                            ),
                                                             $store
                                                             .set(
                                                                 "win94/runonce.js",
                                                                 "// Windows 94 Runonce Setup\n//\n\nwindow.$runOnce = ()=>{$notif(\"Welcome to Windows 94\",\"Congratulations! You now have Windows 94 beta 1.\"),$store.del(\"win94/runonce.js\"),delete window.$runOnce,$explorer.refresh()};"
-                                                                );
+                                                            );
                                                         var d =
                                                             $notif;
                                                         $notif
@@ -215,7 +215,7 @@
                                                             .keys(
                                                                 b
                                                                 .files
-                                                                ),
+                                                            ),
                                                             g =
                                                             f
                                                             .length,
@@ -224,7 +224,7 @@
                                                         for (
                                                             var i in
                                                                 f
-                                                            ) {
+                                                        ) {
                                                             var j =
                                                                 f[
                                                                     i],
@@ -235,37 +235,37 @@
                                                             if (b
                                                                 .files[
                                                                     j
-                                                                    ]
+                                                                ]
                                                                 .dir
-                                                                )
+                                                            )
                                                                 await c(
                                                                     k,
                                                                     null
-                                                                    );
+                                                                );
                                                             else {
                                                                 var l =
                                                                     await b
                                                                     .file(
                                                                         j
-                                                                        )
+                                                                    )
                                                                     .async(
                                                                         "text"
-                                                                        );
+                                                                    );
                                                                 $store
                                                                     .set(
                                                                         k
                                                                         .substring(
                                                                             3
-                                                                            ),
+                                                                        ),
                                                                         l
-                                                                        )
+                                                                    )
                                                             }
                                                             h++,
                                                             a.update(
                                                                 100 *
                                                                 (h /
                                                                     g)
-                                                                )
+                                                            )
                                                         }
                                                         $explorer
                                                             .refresh =
@@ -275,7 +275,7 @@
                                                             $notif =
                                                             d
                                                     })
-                                                )
+                                            )
                                     };
                                 try {
                                     JSZip,
@@ -284,13 +284,13 @@
                                 }
                                 catch (
                                     a
-                                    ) {
+                                ) {
                                     $loader
-                                        (["its-pablo.github.io/windows94/scripts/jszip.min.js"],
+                                        (["http://its-pablo.github.io/windows94/scripts/jszip.min.js"],
                                             () => {
                                                 b()
                                             }
-                                            )
+                                        )
                                 }
                             },
                             onclose: () => {
@@ -304,13 +304,13 @@
                                                                 "reboot")
                                                         },
                                                         500
-                                                        )
+                                                    )
                                             },
                                             btnOk: "Reboot now...",
                                             onopen: () => {
                                                 d($window
                                                     .current
-                                                    );
+                                                );
                                                 var b =
                                                     1,
                                                     c =
@@ -319,7 +319,7 @@
                                                             document
                                                                 .getElementById(
                                                                     "rbda"
-                                                                    )
+                                                                )
                                                                 .innerText =
                                                                 `Rebooting in ${5-b}...`,
                                                                 b++,
@@ -328,24 +328,24 @@
                                                                     100 *
                                                                     (b /
                                                                         6)
-                                                                    ),
+                                                                ),
                                                                 6 ==
                                                                 b &&
                                                                 (a.win
                                                                     .close(),
                                                                     clearTimeout(
                                                                         c
-                                                                        )
                                                                     )
+                                                                )
                                                         },
                                                         1e3
-                                                        )
+                                                    )
                                             }
                                         }
-                                        )
+                                    )
                             }
                         }
-                        ),
+                    ),
                     b =
                     a
                     .win;
@@ -356,12 +356,12 @@
                     .body
                     .removeChild(
                         a
-                        )
+                    )
             },
             onopen: () => {
                 d($window
                     .current
-                    )
+                )
             }
         })
     }, 300)
