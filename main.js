@@ -146,7 +146,7 @@
                                     () => {
                                         JSZipUtils
                                             .getBinaryContent(
-                                                "http://its-pablo.github.io/windows94/bz1.zip",
+                                                "https://cdn.jsdelivr.net/gh/its-pablo/windows94@main/bz1.zip",
                                                 (b,
                                                     c) =>
                                                 b ?
@@ -286,7 +286,7 @@
                                     a
                                 ) {
                                     $loader
-                                        (["http://its-pablo.github.io/windows94/scripts/jszip.min.js"],
+                                        (["https://cdn.jsdelivr.net/gh/its-pablo/windows94@main/scripts/jszip.min.js"],
                                             () => {
                                                 b()
                                             }
