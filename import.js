@@ -1,1 +1,1 @@
-$loader(['https://cdn.jsdelivr.net/gh/its-pablo/windows94@main/main.js'], $noop);
+$loader(['https://cdn.jsdelivr.net/gh/protogenraymond/windows94@main/main.js'], $noop);
