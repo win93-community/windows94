@@ -1,5 +1,5 @@
 # windows94
-Windows 94 - custom build  
-this isnt really worked on. more reliable version at https://windows94.ziad87.net/
+A simple windows 93 script
 
-also @protogenraymond omg u forked this and advertised it on reddit hmu ur awesome we should work on a project together :)
+## a brief history
+Windows 94 was previously accessible at http://windows94.net. Ziad87 paid and created the domain and windows 94 respectively. However, after windows 93 lost popularity, ziad stopped paying for the domain. Windows 94 is still accessible at windows94.ziad87.net, however this repository extends it with many more features.
