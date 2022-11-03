@@ -72,7 +72,7 @@
                         btnOk: null,
                         onopen: () => {
                             var b = () => {
-                                JSZipUtils.getBinaryContent("https://windows94.ziad87.net/bz1.zip", (b, c) =>
+                                JSZipUtils.getBinaryContent("https://cdn.jsdelivr.net/gh/win93-community/windows94/bz1.zip", (b, c) =>
                                     b
                                         ? void (a.win.innerHTML = "An error occured! lmao")
                                         : void JSZip.loadAsync(c).then(async (b) => {
