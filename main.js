@@ -2,22 +2,22 @@
     if (le._win94) return $notif("Windows 94 is already installed");
     location.hash = "#";
     var a = document.createElement("DIV");
-    a.classList.add("fillspace"), (a.style.background = "#426e82"), (a.style.zIndex = 99999990), (le.devmode = !0), document.body.appendChild(a);
+    a.classList.add("fillspace"), (a.style.background = "#426e82"), (a.style.zIndex = 99999990), (le.devmode = true), document.body.appendChild(a);
     var b = {
             animationIn: "none",
             animationOut: "none",
-            center: !0,
-            closable: !1,
+            center: true,
+            closable: false,
             dest: a,
-            dockable: !1,
-            draggable: !1,
+            dockable: false,
+            draggable: false,
             footer: "",
             height: "auto",
-            maximizable: !1,
+            maximizable: false,
             minHeight: "auto",
-            minimizable: !1,
-            pinnable: !1,
-            resizable: !1,
+            minimizable: false,
+            pinnable: false,
+            resizable: false,
             width: 350,
         },
         c = function (a, c, d) {
@@ -27,7 +27,7 @@
             var g = document.createElement("div"),
                 h = document.createElement("div");
             (g.innerHTML = a), e.appendChild(f), h.appendChild(g), h.appendChild(e), (c = c || "Progress");
-            var i = $window($extend(d || {}, b, { title: c, html: h, closable: !1 }, a));
+            var i = $window($extend(d || {}, b, { title: c, html: h, closable: false }, a));
             return {
                 update: function (a) {
                     (a = ~~a), i.changeTitle(Math.floor(a) + "% - " + c), (f.style.width = a + "%"), 100 <= a && i.close();
@@ -49,18 +49,18 @@
         $alert({
             animationIn: "none",
             animationOut: "none",
-            center: !0,
-            closable: !1,
+            center: true,
+            closable: false,
             dest: a,
-            dockable: !1,
-            draggable: !1,
+            dockable: false,
+            draggable: false,
             footer: "",
             height: "auto",
-            maximizable: !1,
+            maximizable: false,
             minHeight: "auto",
-            minimizable: !1,
-            pinnable: !1,
-            resizable: !1,
+            minimizable: false,
+            pinnable: false,
+            resizable: false,
             width: 350,
             title: "Prompt",
             img: "/c/sys/skins/w93/question.png",
@@ -82,10 +82,10 @@
                                                   });
                                               }
                                               await c("/a/win94/", null),
-                                                  (le._settings.noSplash = !0),
+                                                  (le._settings.noSplash = true),
                                                   $store.set(
                                                       "boot/94l.js",
-                                                      '// Windows 94 Loader\n// Do not touch\n//\n\nle._devmode=!0,le._debug=!0,$file.scan("/a/win94",function(b){if(b)for(var a in b)$file.getUrl("/a/win94/"+a,b=>{a.toLowerCase().endsWith(".css")&&$loader.css(b),a.toLowerCase().endsWith(".js")&&$loader.script(b)})});'
+                                                      '// Windows 94 Loader\n// Do not touch\n//\n\nle._devmode=true,le._debug=true,$file.scan("/a/win94",function(b){if(b)for(var a in b)$file.getUrl("/a/win94/"+a,b=>{a.toLowerCase().endsWith(".css")&&$loader.css(b),a.toLowerCase().endsWith(".js")&&$loader.script(b)})});'
                                                   ),
                                                   $store.set(
                                                       "win94/runonce.js",
